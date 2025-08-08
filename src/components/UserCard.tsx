@@ -17,7 +17,7 @@ export const UserCard = ({ name, imgUrl, address, email }:CardUserProps) => {
         {isDetailShown ? <BsChevronUp /> : <BsChevronDown />}
       </div>
       {/* display UserCardDetail accordingly */}
-      {isDetailShown && <UserCardDetail email={email} address={address} />}
+      {isDetailShown && <UserCardDetail email={email} address={address} name="" imgUrl=""/>}
     </div>
   );
 };
